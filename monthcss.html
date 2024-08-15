@@ -82,6 +82,14 @@
       </tbody>
      </table>
 
+      <script>
+        // Check if user is logged in
+        if (sessionStorage.getItem('isAuthenticated') !== 'true') {
+            window.location.href = "login.html";  // Redirect to login page if not authenticated
+        }
+      </script>
 
+
+    
 </body>
 </html>
